@@ -7,13 +7,13 @@ const handler = NextAuth({
         CredentialsProvider({
             name:"Credentials",
             credentials:{
-                Username:{label:"Username",type:"text",placeholder:"Email"},
-                Password:{label:"Password",type:"password",placeholder:"Password"}
+                Username:{label:"Email",type:"email",placeholder:"Jhondoe@gmail.com",required:"true"},
+                Password:{label:"Password",type:"password",placeholder:"Jhon@1234",required:"true"}
             },
             async authorize(credentials:any) {
                 
                 return {
-                    id:"user1 is    signed up"
+                    id:"User is signed up"
                 } // Replace void with null
             },
         })
