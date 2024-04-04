@@ -9,6 +9,7 @@ export const providers:(any[]) = [
             Password:{label:"Password",type:"password",placeholder:"Jhon@1234",required:"true"}
         },
         async authorize(credentials:any) {
+            
             console.log(credentials);
             return {
                 id:"User is signed up",
