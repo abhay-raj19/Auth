@@ -1,5 +1,4 @@
-export async authorize(credentials:any) => {           
-            
+export async function authorize(credentials:any) {
     console.log(credentials);
     return {
         id:"User is signed up",

@@ -1,6 +1,7 @@
 "use client"
 
 import Image from "next/image";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 
 export const Signup = () => {
@@ -61,6 +62,7 @@ export const Signup = () => {
                 />
                 Continue with Credentials
             </button>
+            {/* <Link className="underline hover:text-blue-800 visited:text-purple-600 text-sm font-light" href="/about">No Account?Signup</Link> */}
           </div>
         </div>
       </div>
